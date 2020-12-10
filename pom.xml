@@ -1,0 +1,50 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>fp-java-sarahstueve</groupId>
+  <artifactId>fp-java-sarahstueve</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>fp-java-sarahstueve</name>
+  
+  <dependencies>
+  <dependency>
+    <groupId>org.apache.lucene</groupId>
+    <artifactId>lucene-core</artifactId>
+    <version>7.7.1</version>
+  </dependency>
+  <dependency>
+    <groupId>org.apache.lucene</groupId>
+    <artifactId>lucene-queryparser</artifactId>
+    <version>7.7.1</version>
+  </dependency>
+  <dependency>
+    <groupId>org.apache.lucene</groupId>
+    <artifactId>lucene-analyzers-common</artifactId>
+    <version>7.7.1</version>
+  </dependency>
+  <dependency>
+   <groupId>edu.stanford.nlp</groupId>
+   <artifactId>stanford-corenlp</artifactId>
+   <version>4.0.0</version>
+  </dependency>
+  <dependency>
+    <groupId>edu.stanford.nlp</groupId>
+    <artifactId>stanford-corenlp</artifactId>
+    <version>4.0.0</version>
+    <classifier>models</classifier>
+	</dependency>
+	
+  </dependencies>
+    
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <release>14</release>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
